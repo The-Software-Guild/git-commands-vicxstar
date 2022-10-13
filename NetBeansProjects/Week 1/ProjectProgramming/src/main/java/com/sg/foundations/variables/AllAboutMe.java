@@ -16,7 +16,7 @@ public class AllAboutMe {
         //declare ALL THE THINGS (your name, favorite food, how many pets you have, wwhat kind of building you live in):
         String name, favFood, pets, live, CanWhistle;
         
-        //now give a couple of them some values:
+        //now give them some values:
         name = "Vic";
         favFood = "Ramen";
         pets = "No";
