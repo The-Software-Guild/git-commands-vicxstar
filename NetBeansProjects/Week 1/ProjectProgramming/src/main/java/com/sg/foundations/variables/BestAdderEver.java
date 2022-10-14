@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class BestAdderEver {
     
     public static void main(String[] args) {
+        
         //declare all the variables:
         int a, b, c, d;
         
@@ -25,7 +26,6 @@ public class BestAdderEver {
         Scanner myScanner = new Scanner(System.in);
         
         System.out.println("This is an adder.");
-        
         System.out.println();
         
         System.out.println("Please enter a number: ");

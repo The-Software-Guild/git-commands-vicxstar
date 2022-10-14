@@ -14,7 +14,7 @@ public class HealthyHearts {
     
     public static void main(String[] arg) {
         
-         //declare the varaibles:
+        //declare the varaibles:
         int age;
 
         //declare String variables to hold the user's input:
