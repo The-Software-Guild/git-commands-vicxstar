@@ -1,4 +1,4 @@
-package com.sg.foundations.basicprogrammingconcepts;
+package com.sg.foundations.variables.basicprogrammingconcepts;
 
 import java.util.Scanner;
 
@@ -36,4 +36,5 @@ public class HealthyHearts {
         System.out.println();
         
     }
+    
 }

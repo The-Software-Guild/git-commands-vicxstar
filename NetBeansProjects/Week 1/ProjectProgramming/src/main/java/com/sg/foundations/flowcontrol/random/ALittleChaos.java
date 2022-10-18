@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  *
  * @author vic
- * * email: vickiayoade@gmail.com
+ *  email: vickiayoade@gmail.com
  * date: 13/10/2022
  * purpose: Flow Control - random
  * 

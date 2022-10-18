@@ -1,4 +1,4 @@
-package com.sg.foundations.flowcontrol.arrays;
+package com.sg.foundations.arrays;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.sg.foundations.basicprogrammingconcepts;
+package com.sg.foundations.variables.basicprogrammingconcepts;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -137,5 +137,3 @@ public class RockPaperScissors {
     }
     
 }
-
- 

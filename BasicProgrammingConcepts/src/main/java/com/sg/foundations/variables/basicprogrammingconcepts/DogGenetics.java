@@ -1,4 +1,4 @@
-package com.sg.foundations.basicprogrammingconcepts;
+package com.sg.foundations.variables.basicprogrammingconcepts;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -6,7 +6,6 @@ import java.util.Scanner;
 /**
  *
  * @author vic
- * email: vickiayoade@gmail.com
  * date: 14/10/2022
  * purpose: Dog Genetics
  * 
