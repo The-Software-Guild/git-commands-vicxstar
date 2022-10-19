@@ -1,35 +1,26 @@
-package com.sg.foundations.exercises.luckysevens;
+package com.sg.foundations.variables.classmodeling.refactoring;
 
 import java.util.Random;
-import java.util.Scanner;
 
 /**
  *
  * @author vic
  * email: vickiayoade@gmail.com
- * date: 18/10/2022
- * purpose: Lucky Sevens
+ * date: 19/10/2022
+ * purpose: Refactoring Lucky Sevens
  * 
  */
 public class LuckySevens {
     
-    public static void main(String[] args) {
-        
-        //decalre the scanner:
-        Scanner userIn = new Scanner(System.in);
-        
-        //print the statements and declare the variables:
-        System.out.println("How many dollars do you have?: ");
-        String sDollars = userIn.nextLine();
-        //convert the string into an integer and store it in a new variable:
-        int dollars = Integer.parseInt(sDollars);
-        System.out.println();
-        
-        //declare the randomiser:
-        Random dice = new Random();
+    //the method:
+    //declare the variables required (need this to make sure class reads user's input):
+    public int luck(int dollars) {
         
         //declare the variables:
         int rolls = 0, maxRolls = 0, moneys = dollars;
+        
+        //declare the randomiser:
+        Random dice = new Random();
         
         //create a loop to iterate until the value in the 'dollars' variable is finished:
         while(dollars > 0){
@@ -67,7 +58,7 @@ public class LuckySevens {
         //print:
         System.out.println("You were broke after: " + rolls + " rolls");
         System.out.println("You should have quit after " + maxRolls + " when you had $" + moneys);
-            
-        }
-    
+        return 0;
     }
+    
+}

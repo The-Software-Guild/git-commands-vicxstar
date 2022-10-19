@@ -1,4 +1,4 @@
-package com.sg.foundations.flowcontrol.factorizer;
+package com.sg.foundations.exercises.factorizer;
 
 import java.util.Scanner;
 
@@ -36,6 +36,7 @@ public class Factorizer {
         
         //3. print each factor of the input (not including the number):
         System.out.println("Factors of " + uNum + " are: ");
+        
         //create a 'for' loop to run from 1 to the inputted number (uNum):
         for (int i = 1; i <= uNum; i++) {
             //check if number is divided by i (i is the factor):
@@ -61,9 +62,6 @@ public class Factorizer {
                 
                 //calculate the sum of factors:
                 perf = perf + i;
-                
-                //print out the value of 'i':
-                //System.out.print(i + " ");
                 
             } //end of if statement
         }//end of 'for' loop

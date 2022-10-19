@@ -1,4 +1,4 @@
-package com.sg.foundations.exercises.interestcalculator;
+package com.sg.foundations.variables.classmodeling.refactoring;
 
 import java.util.Scanner;
 
@@ -6,11 +6,10 @@ import java.util.Scanner;
  *
  * @author vic
  * email: vickiayoade@gmail.com
- * date: 18/10/2022
- * purpose: Interest Calculator
- * 
+ * date: 19/10/2022
+ * purpose: Refactored Interest Calculator
  */
-public class InterestCalculator {
+public class IntCalcApp {
     
     public static void main(String[] args) {
         
@@ -43,39 +42,17 @@ public class InterestCalculator {
         sInterestRate = userIn.nextLine();
         //convert input:
         interestRate = Double.parseDouble(sInterestRate)/100;
+        System.out.println();
         
         
         //print:
         System.out.println("Calculating... ");
         
-        //call the method and add the variables for it to function on:
-        compIntCalc(invest, years, interestRate, 4);
+        //declare a new instance of the 'InterestCalculator' class called 'newCalc':
+        InterestCalculator newCalc = new InterestCalculator();
         
+        //run the 'IntCalc' method from the 'InterestCalculator' class in new 'newCalc' instance using the users inputs:
+        newCalc.IntCalc(invest, years, interestRate, 4);
         
     }
-    
-    //the calculation method:
-    //the varaibles to calculate on:
-    public static void compIntCalc(double principle, int years, double interest, int comp) {
-        
-        //create a 'for' loop to iterate through until the conditions have been met
-        for (int i = 1; i <= years; i++) {
-            
-            //using the 'Math' method:
-            double total = Math.floor((principle * (Math.pow(1 + (interest/comp), comp * 1))) 
-                    * 100) / 100;
-            //double total = principle * (Math.pow((1 + interest / 100), year)) - pri;
-            double compInt = Math.floor((total - principle) * 100) / 100;
-            
-            //print statements:
-            System.out.println("Year " + i + ": ");
-            System.out.println("Began with $" + principle);
-            System.out.println("Earned $" + compInt);
-            System.out.println("Ended with $" + total);  
-            System.out.println("");
-            
-            Math.floor(((principle += compInt) * 100) / 100);
-        }  
-    }
-    
 }
