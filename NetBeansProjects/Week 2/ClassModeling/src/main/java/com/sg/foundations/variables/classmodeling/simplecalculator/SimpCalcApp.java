@@ -54,8 +54,7 @@ public class SimpCalcApp {
             SimpleCalculator newCalc = new SimpleCalculator();
             
             //run the 'calc' method from the 'SimpleCalculator' class in new 'newCalc' instance using the users inputs:
-            newCalc.calc(start, sign, num1, num2);
-            
+            newCalc.calc(sign, num1, num2);
         }
         
         //a statement to end the program if the user's input is 'no':

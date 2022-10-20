@@ -14,8 +14,7 @@ public class SimpleCalculator {
     
     //the method:
     //declare the variables required (need this to make sure class reads user's input):
-    public String calc(String start, char sign, int num1, int num2) {
-
+    public String calc(char sign, int num1, int num2) {
             //declare the variables:
             int equals;
             
